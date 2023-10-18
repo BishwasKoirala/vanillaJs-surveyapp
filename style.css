@@ -1,0 +1,14 @@
+*{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+textarea{
+  font-size: large;
+}

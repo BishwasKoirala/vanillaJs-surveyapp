@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey-app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form name="survey" id="survey-form">
+    <h1 class="hero-head">Survey</h1>
+
+    <label for="name">なまえ/仮名(Name/Nickname)</label><br>
+    <input type="text" name="name" id="name" class="input" placeholder="Name/名前" required><br><br>
+
+    <label for="age">年齢(age)</label><br>
+    <input type="text" name="age" id="age" class="input" placeholder="age/年齢" required><br><br>
+
+    <label for="home-country">出身国(HomeCountry)</label><br>
+    <input type="text" name="home-country" id="home-country" class="input" placeholder="Japan/日本" required><br><br>
+
+    <label for="years-in-japan">日本にいる年数(Years in Japan)</label><br>
+    <input type="years-in-japan" name="years-in-japan" id="years-in-japan" class="input" required><br><br>
+
+    <label for="purpose-in-japan">日本にいる理由(purpose-in-japan)</label><br>
+    <input type="text" name="purpose-in-japan" id="purpose-in-japan" class="input" placeholder="work/仕事,study/留学 etc" required><br><br>
+
+    <label for="feel-japan">日本をどうおもうか(How do you feel about japan)</label><br>
+    <textarea name="feel-japan" id="feel-japan" cols="30" rows="5" class="input" placeholder="このようなこと大変、このようなことすばらしい/these thing are good , these things are not good  etc" required></textarea><br><br>
+
+    
+    <button type="submit" class="send-button">Submit</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="reset" class="reset-button">Reset</button>
+  </form>
+
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
