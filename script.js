@@ -25,6 +25,12 @@ form.addEventListener('submit', async (event) => {
     const { error , data } = await supabase.from('form').insert([submission])
     console.log({error,data})
 
+    if (error) {
+      alert('therewas an error/エラー発生')
+    } else {
+      alert('thanks for answering/ご協力ありがとうございました')
+    }
 
+    formInputs.forEach(element => element.value = '')
 
 })
